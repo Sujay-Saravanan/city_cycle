@@ -1,0 +1,55 @@
+{
+  "dataset_rows": 17379,
+  "train_samples": 13903,
+  "test_samples": 3476,
+  "features": [
+    "season",
+    "yr",
+    "mnth",
+    "hr",
+    "holiday",
+    "weekday",
+    "workingday",
+    "weathersit",
+    "temp",
+    "atemp",
+    "hum",
+    "windspeed",
+    "is_rush_hour",
+    "is_night",
+    "sin_hr",
+    "cos_hr",
+    "temp_celsius"
+  ],
+  "metrics": {
+    "baseline": {
+      "mae": 93.68,
+      "rmse": 126.17,
+      "r2": 0.6725
+    },
+    "random_forest": {
+      "mae": 44.76,
+      "rmse": 69.31,
+      "r2": 0.9012
+    }
+  },
+  "top_features": {
+    "hr": 0.3514,
+    "is_rush_hour": 0.1396,
+    "atemp": 0.0833,
+    "yr": 0.077,
+    "cos_hr": 0.0658,
+    "temp_celsius": 0.0515,
+    "sin_hr": 0.0485,
+    "temp": 0.0441,
+    "hum": 0.0369,
+    "workingday": 0.0348,
+    "weathersit": 0.016,
+    "mnth": 0.0157,
+    "season": 0.0121,
+    "weekday": 0.0106,
+    "windspeed": 0.0096,
+    "holiday": 0.0025,
+    "is_night": 0.0007
+  }
+}
